@@ -1,0 +1,77 @@
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 7rem;
+    gap: 3rem;
+}
+
+.card {
+    background-color: white;
+    width: 22rem;
+    margin: .5rem;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.252);
+    padding: 1em;
+}
+
+.blur {
+    opacity: 50%;
+}
+
+.button {
+    height: 1rem;
+    width: .5rem;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.price-text {
+    text-align: left;
+}
+
+.pricing-icon {
+    width: 2.75em;
+    background-color: purple;
+    border-radius: 50%;
+    padding: .3em;
+}
+
+.hero-img {
+    height: 35vh;
+    border-radius: 1rem;
+}
+
+.mem-cards {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(2, 15, 29, 0.252);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.price-btn {
+    height: 2.8rem;
+    width: 7rem;
+    margin: 2rem;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+
+.current {
+    background-color: #888cbb;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.trial {
+    background-color: #ff6392;
+    font-size: 1.3rem;
+
+}

@@ -1,0 +1,45 @@
+.navbar {
+  background-color: rgb(99, 99, 209);
+  border-radius: 5rem;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.252);
+}
+
+.icon {
+  display: flex;
+  padding: 0.2rem;
+  height: 5.5rem;
+}
+
+.nav-items {
+  padding-right: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+a.btn-link,
+span.btn-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* coloring for active and passive states */
+/* .active {
+    color: green;
+    background-color: teal;
+} */
+
+a.btn-link:hover,
+span.btn-link:hover {
+  color: rgb(255, 115, 138);
+}

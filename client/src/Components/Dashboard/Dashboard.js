@@ -23,7 +23,7 @@ const Dashboard = () => {
   const [my_socket, setMySocket] = useState(null);
 
   useEffect(() => {
-    const socket = io("http://localhost:5000");
+    const socket = io("https://chat-planet-0073.onrender.com");
     setMySocket(socket);
     socket.on("hello", (message) => {
       console.log(message); // Print the emitted "hello" event

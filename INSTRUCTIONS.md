@@ -88,3 +88,11 @@ Now that we have successfully merged the frontend aka client with server!
 
 We will move to DEPLOYMENT:
 
+Specific Things Todo (respective of platform you're deploying on):
+
+1. Make keys in "scripts" in "package.json" of server
+2. one for pre-processing (things need to done before starting the server i.e install npm modules of client and then build frontend and maybe migrations)
+3. one for starting the server
+
+"start": "node index.js",
+"build": "npm install && cd client && npm install && npm run build",

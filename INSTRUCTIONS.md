@@ -82,6 +82,8 @@ now this will be collision so make sure of that!
 
 d. CORS link can either be allowed for everyone "*" or any specific url "frontend-url"
 
+e. const port = process.env.PORT || 5000;
+
 
 Now that we have successfully merged the frontend aka client with server!
 

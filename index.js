@@ -17,8 +17,8 @@ const path = require("path");
 
 const http = require("http");
 
-const hostname = "127.0.0.1";
-const port = 5000;
+// const hostname = "127.0.0.1";
+const port = process.env.PORT || 5000;
 
 const express = require("express");
 const app = express();

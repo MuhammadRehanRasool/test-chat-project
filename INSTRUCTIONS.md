@@ -26,7 +26,7 @@ In simple words we have added client folder in "server" folder and now "server" 
 So in our case we are using sockets for which we need to define the endpoint of server and
 it's dynamic so we need to make sure we enter the actual site link on which server will be deployed
 
-3. Build/Compress FRONTEND aka CLIENT
+3. Build/Compress FRONTEND aka CLIENT (not compulsory)
 
 => terminal command => npm run build
 
@@ -82,7 +82,7 @@ now this will be collision so make sure of that!
 
 d. CORS link can either be allowed for everyone "*" or any specific url "frontend-url"
 
-e. const port = process.env.PORT || 5000;
+e. const port = process.env.PORT || 5000; (Most important)
 
 
 Now that we have successfully merged the frontend aka client with server!

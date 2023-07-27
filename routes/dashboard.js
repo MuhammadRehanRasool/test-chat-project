@@ -3,10 +3,10 @@ const router = express.Router();
 const { Message } = require('./../models');
 
 // Define the /dashboard route
-router.get('/dashboard', (req, res) => {
-  // Handle the request and send a response
-  res.send('Welcome to the dashboard!');
-});
+// router.get('/dashboard', (req, res) => {
+//   // Handle the request and send a response
+//   res.send('Welcome to the dashboard!');
+// });
 
 
 router.post("/send-message", async (req, res) => {

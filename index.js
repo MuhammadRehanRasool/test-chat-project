@@ -13,6 +13,8 @@ const initializePassport = require("./passportconfig");
 const { Server } = require("socket.io");
 const cors = require("cors");
 
+const path = require("path");
+
 const http = require("http");
 
 const hostname = "127.0.0.1";
@@ -21,12 +23,13 @@ const port = 5000;
 const express = require("express");
 const app = express();
 app.use(cors());
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
@@ -50,9 +53,9 @@ io.on("connection", function (socket) {
   });
 });
 
-app.get("/", (req, res) => {
-  res.send("Hello from Express!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello from Express!");
+// });
 
 initializePassport(
   passport,
@@ -74,6 +77,10 @@ app.use(passport.session());
 app.use(flash());
 app.use(userRouter);
 app.use(dashboardRouter);
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
